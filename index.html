@@ -1,0 +1,136 @@
+<head>
+  <title>husky</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+  <style>
+    body {
+        font-family: "Comfortaa";
+        color: #d8dee9;
+        background: #2e3440;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container {
+        height: 8em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #pfp {
+        height: 8em;
+        width: 8em;
+        border-radius: 100%;
+        filter: drop-shadow(black 2px 2px 4px)
+    }
+
+    /*
+    #pfp:hover {
+        animation: spin-animation 0.5s 1;
+    }
+
+    @keyframes spin-animation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(359deg);
+        }
+    }
+    */
+
+    #name {
+        height: inherit;
+        margin-left: 1em;
+        margin-right: 1em;
+        display: flex;
+        flex-flow: column;
+    }
+
+    #name h1 {
+        color: #eceff4;
+        font-size: 3em;
+        margin: 0;
+    }
+
+    #name h1 span {
+        transition: color 0.2s ease;
+    }
+
+    #name h1:hover .trans-blue {
+        color: #81a1c1;
+    }
+
+    #name h1:hover .trans-pink {
+        color: #b48ead;
+    }
+
+    #name h2 {
+        font-size: 1.5em;
+        margin: 0;
+        text-align: center;
+    }
+
+    #icon-tray {
+        height: 2.25em;
+        margin-top: 0.75em;
+    }
+
+    .icon, .icon img {
+        height: inherit;
+    }
+
+    .icon {
+        opacity: 50%;
+        margin-right: 0.5em;
+        transition: all 0.25s ease;
+    }
+
+    .icon:hover {
+        opacity: 100%;
+    }
+
+    @media screen and (max-width: 640px) {
+        #name {
+            margin-left: 0;
+            margin-right: 0;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+
+        #container {
+            height: auto;
+            flex-direction: column;
+        }
+
+        #name h1 {
+            margin-top: 0.5em;
+        }
+    }
+  </style>
+</head>
+<body>
+  <div id="container" style="">
+    <img id="pfp" src="pfp.png">
+    <div id="name">
+      <h1>
+        <span class="trans-blue">h</span><span class="trans-pink">u</span>s<span class="trans-pink">k</span><span class="trans-blue">y</span>
+      </h1>
+      <!-- <h2><span style="color: #b48ead">she/her</span> / <span style="color: #81a1c1">they/them</span></h2> -->
+      <h2 style="color: #b48ead">just a dog on the web</h2>
+      <div id="icon-tray">
+        <a href="blog" class="icon"><img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4dd.svg"></a>
+        <a rel="me" href="https://mastodon.online/@husky" class="icon"><img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f418.svg"></a>
+        <a href="https://matrix.to/#/@husky:nope.chat" class="icon"><img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f4ac.svg"></a>
+        <a href="mailto:husky@husky.sh" class="icon"><img src="https://cdnjs.cloudflare.com/ajax/libs/twemoji/14.0.2/svg/1f48c.svg"></a>
+      </div>
+    </div>
+  </div>
+</body>
